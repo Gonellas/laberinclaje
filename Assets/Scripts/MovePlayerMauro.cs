@@ -11,10 +11,12 @@ public class MovePlayerMauro : MonoBehaviour
 
     //Variables para el Dash
     private bool puedeDashear = true;
+    private bool sePuedeMover = true;
     private bool estaDasheando;
-    private float poderDash = 24f;
+    private float velocidadDash = 24f;
     private float tiempoDash = 0.2f;
     private float dashCooldown = 1f;
+   
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
@@ -26,7 +28,11 @@ public class MovePlayerMauro : MonoBehaviour
             return;
         }
 
-        Move();
+        if (sePuedeMover)
+        {
+            Move();
+        }
+        
         Flip();
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && puedeDashear)
@@ -83,14 +89,14 @@ public class MovePlayerMauro : MonoBehaviour
 
     private IEnumerator Dash()
     {
+        sePuedeMover = false;
         puedeDashear = false;
         estaDasheando = true;
-        animator.SetBool("move", false);
-        animator.SetBool("trashRed", false);
-        animator.SetBool("dash", true);
-        rb.velocity = new Vector2(transform.localScale.x * poderDash, 0f);
+        animator.SetTrigger("Dash");
+
+        rb.velocity = new Vector2(transform.localScale.x * velocidadDash, 0f);
         yield return new WaitForSeconds(tiempoDash);
-        animator.SetBool("dash", false);
+        sePuedeMover = true;
         estaDasheando = false;
         yield return new WaitForSeconds(dashCooldown);
         puedeDashear = true;
