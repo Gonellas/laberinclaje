@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MovePlayerMauro : MonoBehaviour
 {
+    //Variables para cambiar de tacho
+    private int contadorDeClick = 0;
+
     //Varialbes para el movimiento
     private float horizontal;
     private float velocidad = 8f;
@@ -20,7 +23,7 @@ public class MovePlayerMauro : MonoBehaviour
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
-    //[SerializeField] private SpriteRenderer spriteRend;
+
     void Update()
     {
         if (estaDasheando)
@@ -31,6 +34,7 @@ public class MovePlayerMauro : MonoBehaviour
         if (sePuedeMover)
         {
             Move();
+            cambiarTacho();
         }
         
         Flip();
@@ -56,24 +60,39 @@ public class MovePlayerMauro : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        
 
-        if(horizontal != 0f)
+        if (horizontal != 0f)
         {
             animator.SetBool("move", true);
-            animator.SetBool("trashRed", true);
         }
         else
         {
             animator.SetBool("move", false); 
-            animator.SetBool("trashRed", false);
         }
     }
 
     //Funcion para cambiar el tacho de basura :v
-    private void CambiarTacho()
+    private void cambiarTacho()
     {
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            contadorDeClick++;
+            if(contadorDeClick >= 4)
+            {
+                contadorDeClick = 0;
+            }
 
+            animator.SetInteger("AnimacionActual", contadorDeClick);
+
+        }else if (Input.GetKeyDown(KeyCode.DownArrow))
+        {
+            contadorDeClick--;
+            if(contadorDeClick < 0)
+            {
+                contadorDeClick = 3;
+            }
+            animator.SetInteger("AnimacionActual", contadorDeClick);
+        }
     }
 
     private void Flip()
@@ -92,8 +111,8 @@ public class MovePlayerMauro : MonoBehaviour
         sePuedeMover = false;
         puedeDashear = false;
         estaDasheando = true;
+        animator.SetBool("move", false);
         animator.SetTrigger("Dash");
-
         rb.velocity = new Vector2(transform.localScale.x * velocidadDash, 0f);
         yield return new WaitForSeconds(tiempoDash);
         sePuedeMover = true;
