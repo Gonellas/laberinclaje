@@ -33,8 +33,8 @@ public class MovePlayerMauro : MonoBehaviour
 
         if (sePuedeMover)
         {
-            Move();
             cambiarTacho();
+            Move();
         }
         
         Flip();
