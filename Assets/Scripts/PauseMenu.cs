@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
+    public MovePlayerMauro playerMove;
     [SerializeField] GameObject pauseMenu;
 
     private bool isPaused = false;
@@ -27,11 +28,14 @@ public class PauseMenu : MonoBehaviour
     {
         if (pause)
         {
+            playerMove.sePuedeMover = false;
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
+            
         }
         else
         {
+            playerMove.sePuedeMover = true;
             Time.timeScale = 1;
             pauseMenu.SetActive(false);
         }

@@ -14,14 +14,14 @@ public class MovePlayerMauro : MonoBehaviour
 
     //Variables para el Dash
     private bool puedeDashear = true;
-    private bool sePuedeMover = true;
+    [SerializeField] public bool sePuedeMover = true;
     private bool estaDasheando;
     private float velocidadDash = 24f;
     private float tiempoDash = 0.2f;
     private float dashCooldown = 1f;
 
     //Variable para la puntiacion
-    public int score = 0;
+    public GestorDePuntuacion gestorPuntuacion;
    
 
     [SerializeField] private Rigidbody2D rb;
@@ -47,7 +47,6 @@ public class MovePlayerMauro : MonoBehaviour
             StartCoroutine(Dash());
         }
 
-        Debug.Log(score);
     }
 
     private void FixedUpdate()
@@ -64,25 +63,25 @@ public class MovePlayerMauro : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("BasuraTipoBanana") && animator.GetInteger("AnimacionActual") == 0)
         {
-            score += 10;
-            Destroy(gameObject);
+            gestorPuntuacion.ActualizarPuntuacion(10);
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoPapel") && animator.GetInteger("AnimacionActual") == 1)
         {
-            score += 25;
-            Destroy(gameObject);
+            gestorPuntuacion.ActualizarPuntuacion(25);
         }
+
         if (collision.gameObject.CompareTag("BasuraTipoBotella") && animator.GetInteger("AnimacionActual") == 2)
         {
-            score += 50;
-            Destroy(gameObject);
+            gestorPuntuacion.ActualizarPuntuacion(50);
         }
+
         if (collision.gameObject.CompareTag("BasuraTipoPila") && animator.GetInteger("AnimacionActual") == 3)
         {
-            score += 100;
-            Destroy(gameObject);
+            gestorPuntuacion.ActualizarPuntuacion(100);
         }
+
+        Destroy(collision.gameObject);
     }
 
     private void Move()

@@ -58,22 +58,38 @@ public class Basura : MonoBehaviour
 
     private void DestruirBasuraFueraDeCamara()
     {
-        List<GameObject> basurasParaEliminar = new List<GameObject>();
+        List<int> basurasParaEliminar = new List<int>();
 
-        foreach (var basura in basurasGeneradas)
+
+        for (int i = 0; i < basurasGeneradas.Count; i++)
         {
-            Vector3 screenPosition = Camera.main.WorldToScreenPoint(basura.transform.position);
+            GameObject basura = basurasGeneradas[i];
 
-            if (screenPosition.x < 0 || screenPosition.x > Screen.width || screenPosition.y < 0 || screenPosition.y > Screen.height)
+            
+            if(basura != null) //Verifica si el objeto existe
             {
-                basurasParaEliminar.Add(basura);
+                Vector3 screenPosition = Camera.main.WorldToScreenPoint(basura.transform.position);
+
+                if (screenPosition.x < 0 || screenPosition.x > Screen.width || screenPosition.y < 0 || screenPosition.y > Screen.height)
+                {
+                    basurasParaEliminar.Add(i);
+                }
             }
+
+            
         }
 
-        foreach (var basura in basurasParaEliminar)
+        //Elimina las basuras teniendo en cuenta las basuras en basurasParaEliminar
+        foreach (int basuras in basurasParaEliminar)
         {
-            basurasGeneradas.Remove(basura);
-            Destroy(basura);
+            GameObject basura = basurasGeneradas[basuras];
+
+            if(basura != null)
+            {
+                basurasGeneradas.RemoveAt(basuras);
+                Destroy(basura);
+            }
+
         }
     }
 
