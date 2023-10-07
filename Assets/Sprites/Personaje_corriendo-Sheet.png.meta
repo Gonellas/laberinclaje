@@ -132,10 +132,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 32
-        height: 32
+        x: 9
+        y: 7
+        width: 16
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,7 +144,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 52fc0dc4c2277db489369a66cbbcb33d
-      internalID: -1969823743
+      internalID: 7116319514556392181
       vertices: []
       indices: 
       edges: []
@@ -153,10 +153,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
+        x: 41
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,7 +165,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d2f0ce8c64c931242aed1e32d9dc41fe
-      internalID: 710706416
+      internalID: -367986297629508665
       vertices: []
       indices: 
       edges: []
@@ -174,10 +174,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
+        x: 73
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,7 +186,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6b068fb252b23ef4ca4cf8a71464b371
-      internalID: -1866462698
+      internalID: -2232444369059531469
       vertices: []
       indices: 
       edges: []
@@ -195,10 +195,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
+        x: 105
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,7 +207,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f4e1eac4bfac9594c8832a425988dead
-      internalID: -475639535
+      internalID: 8050776351783509970
       vertices: []
       indices: 
       edges: []
@@ -216,10 +216,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_4
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
+        x: 137
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,7 +228,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dd88766bbf9079d41808704f2c2e2e9b
-      internalID: 665694813
+      internalID: 650817419578121458
       vertices: []
       indices: 
       edges: []
@@ -237,10 +237,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_5
       rect:
         serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
+        x: 169
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,7 +249,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 014c05b04a6d58c4fa87f213626a1874
-      internalID: -1452266647
+      internalID: 7051735213881051510
       vertices: []
       indices: 
       edges: []
@@ -258,10 +258,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_6
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 32
-        height: 32
+        x: 201
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,7 +270,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e030434ca4308104db4d1418274a41ff
-      internalID: -617276337
+      internalID: 4488027630930065200
       vertices: []
       indices: 
       edges: []
@@ -279,10 +279,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_7
       rect:
         serializedVersion: 2
-        x: 224
-        y: 0
-        width: 32
-        height: 32
+        x: 233
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,7 +291,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8bdcedc22eaedff45898de1f86d259cf
-      internalID: 1306508643
+      internalID: -6488505005577556566
       vertices: []
       indices: 
       edges: []
@@ -300,19 +300,19 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_8
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 32
-        height: 32
+        x: 265
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3c5e5ec896b8d004a85986fb7cf4b6ce
-      internalID: -1312225589
+      spriteID: ccfb5fb36f1348530800000000000000
+      internalID: 3856262114573664204
       vertices: []
       indices: 
       edges: []
@@ -321,10 +321,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_9
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
-        width: 32
-        height: 32
+        x: 297
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +332,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a6b3391c6a3a044da4015a0487784ae
-      internalID: -103528735
+      spriteID: b18e74b78a72e714f8e376945bdae397
+      internalID: 1187586945
       vertices: []
       indices: 
       edges: []
@@ -342,10 +342,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_10
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
-        width: 32
-        height: 32
+        x: 329
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,8 +353,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 257d5dac786aff746b226b3c138f79e9
-      internalID: -90426046
+      spriteID: cb3099c5f001ad8439c99d2912b48ccd
+      internalID: 1055698693
       vertices: []
       indices: 
       edges: []
@@ -363,10 +363,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_11
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
-        width: 32
-        height: 32
+        x: 361
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,8 +374,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 699019eef2a98794d8d95a60025ec442
-      internalID: -1472888560
+      spriteID: b3f631398cd98994e81fd9a887e9bd23
+      internalID: -1199883143
       vertices: []
       indices: 
       edges: []
@@ -384,10 +384,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_12
       rect:
         serializedVersion: 2
-        x: 384
-        y: 0
-        width: 32
-        height: 32
+        x: 393
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -395,8 +395,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b994a33bef21a914c9322956ed8dcbc7
-      internalID: 1573576227
+      spriteID: b30d9e9b1fb0dce4eb51c302f9818b88
+      internalID: 575831927
       vertices: []
       indices: 
       edges: []
@@ -405,10 +405,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_13
       rect:
         serializedVersion: 2
-        x: 416
-        y: 0
-        width: 32
-        height: 32
+        x: 425
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -416,8 +416,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8068de96e4664404182aad8dbaa44494
-      internalID: -64451960
+      spriteID: 8a460ac59994a7a4aa51480747dbb20c
+      internalID: -1122761601
       vertices: []
       indices: 
       edges: []
@@ -426,10 +426,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_14
       rect:
         serializedVersion: 2
-        x: 448
-        y: 0
-        width: 32
-        height: 32
+        x: 457
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -437,8 +437,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 722ea612652387347829d4fe78559413
-      internalID: -1775095183
+      spriteID: 96fefb93cb04ba14ab77451bd0293091
+      internalID: 331555374
       vertices: []
       indices: 
       edges: []
@@ -447,10 +447,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_15
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
-        width: 32
-        height: 32
+        x: 489
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -458,8 +458,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4badcb7b7bdd42478fa81ae6bb0036c
-      internalID: 767148991
+      spriteID: 46da542515a71c34294472c8d614a63f
+      internalID: 574313882
       vertices: []
       indices: 
       edges: []
@@ -468,10 +468,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_16
       rect:
         serializedVersion: 2
-        x: 512
-        y: 0
-        width: 32
-        height: 32
+        x: 521
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,8 +479,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fb4583192435944a93db7eb9b96e096
-      internalID: 568062340
+      spriteID: 9624c64f7de935d4abe3bab0875525a6
+      internalID: -1590687144
       vertices: []
       indices: 
       edges: []
@@ -489,10 +489,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_17
       rect:
         serializedVersion: 2
-        x: 544
-        y: 0
-        width: 32
-        height: 32
+        x: 553
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,8 +500,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1927d45a71f50fe488fe8eb86ec1c6c3
-      internalID: 881960612
+      spriteID: eadbc51e2d220df44b170035a6e6ee34
+      internalID: 620461034
       vertices: []
       indices: 
       edges: []
@@ -510,10 +510,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_18
       rect:
         serializedVersion: 2
-        x: 576
-        y: 0
-        width: 32
-        height: 32
+        x: 585
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -521,8 +521,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b42fa35c5ead2984f908ab26eca8d970
-      internalID: -2118109353
+      spriteID: 855570666d712a84baced36a98fe0b11
+      internalID: -398881968
       vertices: []
       indices: 
       edges: []
@@ -531,10 +531,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_19
       rect:
         serializedVersion: 2
-        x: 608
-        y: 0
-        width: 32
-        height: 32
+        x: 617
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,8 +542,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c36149201ddd83443add1ea8018fb913
-      internalID: 1843402050
+      spriteID: 964504f5f983600418b57c759941ae01
+      internalID: 1610971774
       vertices: []
       indices: 
       edges: []
@@ -552,10 +552,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_20
       rect:
         serializedVersion: 2
-        x: 640
-        y: 0
-        width: 32
-        height: 32
+        x: 649
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -563,8 +563,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7948a702bf04b141a62b4efd2c396a7
-      internalID: -149903535
+      spriteID: a34b3ec342fe2b645a1a9cc0edc65b47
+      internalID: -1211584927
       vertices: []
       indices: 
       edges: []
@@ -573,10 +573,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_21
       rect:
         serializedVersion: 2
-        x: 672
-        y: 0
-        width: 32
-        height: 32
+        x: 681
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,8 +584,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 61ae9b08a86f0704884108b95937fa58
-      internalID: -776150519
+      spriteID: ccb4fbf9581fd1940a7187fbd3a7f9d9
+      internalID: -854773668
       vertices: []
       indices: 
       edges: []
@@ -594,10 +594,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_22
       rect:
         serializedVersion: 2
-        x: 704
-        y: 0
-        width: 32
-        height: 32
+        x: 713
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -605,8 +605,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69d80fa60b770a14a834900e05a84b04
-      internalID: -682026628
+      spriteID: 9e364a7672a5d5a4c9f60ef17eb7f079
+      internalID: -1738709575
       vertices: []
       indices: 
       edges: []
@@ -615,10 +615,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_23
       rect:
         serializedVersion: 2
-        x: 736
-        y: 0
-        width: 32
-        height: 32
+        x: 745
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -626,8 +626,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa0ee4bf7a25c1439c4655af9581ee3
-      internalID: -486593471
+      spriteID: c48ed3c52feb848419928617cc04986a
+      internalID: 1782452055
       vertices: []
       indices: 
       edges: []
@@ -636,10 +636,10 @@ TextureImporter:
       name: Personaje_corriendo-Sheet_24
       rect:
         serializedVersion: 2
-        x: 768
-        y: 0
-        width: 32
-        height: 32
+        x: 777
+        y: 7
+        width: 19
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -647,8 +647,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bc3c00a15b6021438baf31ebed40225
-      internalID: 2062017496
+      spriteID: e65653207733eec4fb79fcfdeba6352d
+      internalID: -575148908
       vertices: []
       indices: 
       edges: []
@@ -656,7 +656,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 454409ba742bb804d80fc34b60f4507f
     internalID: 0
     vertices: []
     indices: 
@@ -664,31 +664,31 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Personaje_corriendo-Sheet_1: 710706416
-      Personaje_corriendo-Sheet_2: -1866462698
-      Personaje_corriendo-Sheet_17: 881960612
-      Personaje_corriendo-Sheet_5: -1452266647
-      Personaje_corriendo-Sheet_24: 2062017496
-      Personaje_corriendo-Sheet_10: -90426046
-      Personaje_corriendo-Sheet_16: 568062340
-      Personaje_corriendo-Sheet_11: -1472888560
-      Personaje_corriendo-Sheet_14: -1775095183
-      Personaje_corriendo-Sheet_13: -64451960
-      Personaje_corriendo-Sheet_19: 1843402050
-      Personaje_corriendo-Sheet_9: -103528735
-      Personaje_corriendo-Sheet_8: -1312225589
-      Personaje_corriendo-Sheet_15: 767148991
-      Personaje_corriendo-Sheet_21: -776150519
-      Personaje_corriendo-Sheet_12: 1573576227
-      Personaje_corriendo-Sheet_7: 1306508643
-      Personaje_corriendo-Sheet_4: 665694813
-      Personaje_corriendo-Sheet_20: -149903535
-      Personaje_corriendo-Sheet_6: -617276337
-      Personaje_corriendo-Sheet_23: -486593471
-      Personaje_corriendo-Sheet_18: -2118109353
-      Personaje_corriendo-Sheet_0: -1969823743
-      Personaje_corriendo-Sheet_22: -682026628
-      Personaje_corriendo-Sheet_3: -475639535
+      Personaje_corriendo-Sheet_1: -367986297629508665
+      Personaje_corriendo-Sheet_2: -2232444369059531469
+      Personaje_corriendo-Sheet_17: 620461034
+      Personaje_corriendo-Sheet_5: 7051735213881051510
+      Personaje_corriendo-Sheet_24: -575148908
+      Personaje_corriendo-Sheet_10: 1055698693
+      Personaje_corriendo-Sheet_16: -1590687144
+      Personaje_corriendo-Sheet_11: -1199883143
+      Personaje_corriendo-Sheet_14: 331555374
+      Personaje_corriendo-Sheet_13: -1122761601
+      Personaje_corriendo-Sheet_19: 1610971774
+      Personaje_corriendo-Sheet_9: 1187586945
+      Personaje_corriendo-Sheet_8: 3856262114573664204
+      Personaje_corriendo-Sheet_15: 574313882
+      Personaje_corriendo-Sheet_21: -854773668
+      Personaje_corriendo-Sheet_12: 575831927
+      Personaje_corriendo-Sheet_7: -6488505005577556566
+      Personaje_corriendo-Sheet_4: 650817419578121458
+      Personaje_corriendo-Sheet_20: -1211584927
+      Personaje_corriendo-Sheet_6: 4488027630930065200
+      Personaje_corriendo-Sheet_23: 1782452055
+      Personaje_corriendo-Sheet_18: -398881968
+      Personaje_corriendo-Sheet_0: 7116319514556392181
+      Personaje_corriendo-Sheet_22: -1738709575
+      Personaje_corriendo-Sheet_3: 8050776351783509970
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
