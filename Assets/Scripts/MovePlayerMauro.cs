@@ -19,6 +19,9 @@ public class MovePlayerMauro : MonoBehaviour
     private float velocidadDash = 24f;
     private float tiempoDash = 0.2f;
     private float dashCooldown = 1f;
+
+    //Variable para la puntiacion
+    public int score = 0;
    
 
     [SerializeField] private Rigidbody2D rb;
@@ -43,6 +46,8 @@ public class MovePlayerMauro : MonoBehaviour
         {
             StartCoroutine(Dash());
         }
+
+        Debug.Log(score);
     }
 
     private void FixedUpdate()
@@ -53,6 +58,31 @@ public class MovePlayerMauro : MonoBehaviour
         }
 
         rb.velocity = new Vector2(horizontal * velocidad, rb.velocity.y);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("BasuraTipoBanana") && animator.GetInteger("AnimacionActual") == 0)
+        {
+            score += 10;
+            Destroy(gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("BasuraTipoPapel") && animator.GetInteger("AnimacionActual") == 1)
+        {
+            score += 25;
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("BasuraTipoBotella") && animator.GetInteger("AnimacionActual") == 2)
+        {
+            score += 50;
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.CompareTag("BasuraTipoPila") && animator.GetInteger("AnimacionActual") == 3)
+        {
+            score += 100;
+            Destroy(gameObject);
+        }
     }
 
     private void Move()
