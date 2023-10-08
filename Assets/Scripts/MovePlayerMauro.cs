@@ -9,7 +9,7 @@ public class MovePlayerMauro : MonoBehaviour
 
     //Varialbes para el movimiento
     private float horizontal;
-    private float velocidad = 8f;
+    private float velocidad = 10f;
     private bool mirandoDerecha = true;
     private float limiteIzquierdo = -8.5f;
     private float limiteDerecho = 8.5f;
@@ -86,7 +86,7 @@ public class MovePlayerMauro : MonoBehaviour
         if (collision.gameObject.CompareTag("BasuraTipoBanana") && animacionActual == 0)
         {
             gestorPuntuacion.ActualizarPuntuacion(10);
-            barraDash.valorActualDash += 0.1f;
+            barraDash.valorActualDash += 0.35f;
 
             if (contaminacion.alphaActual > 0)
             {
@@ -97,7 +97,7 @@ public class MovePlayerMauro : MonoBehaviour
         else if (collision.gameObject.CompareTag("BasuraTipoPapel") && animacionActual == 1)
         {
             gestorPuntuacion.ActualizarPuntuacion(25);
-            barraDash.valorActualDash += 0.1f;
+            barraDash.valorActualDash += 0.35f;
 
             if (contaminacion.alphaActual > 0)
             {
@@ -108,7 +108,7 @@ public class MovePlayerMauro : MonoBehaviour
         else if (collision.gameObject.CompareTag("BasuraTipoBotella") && animacionActual == 2)
         {
             gestorPuntuacion.ActualizarPuntuacion(50);
-            barraDash.valorActualDash += 0.1f;
+            barraDash.valorActualDash += 0.35f;
 
             if (contaminacion.alphaActual > 0)
             {
@@ -119,7 +119,7 @@ public class MovePlayerMauro : MonoBehaviour
         else if (collision.gameObject.CompareTag("BasuraTipoPila") && animacionActual == 3)
         {
             gestorPuntuacion.ActualizarPuntuacion(100);
-            barraDash.valorActualDash += 0.1f;
+            barraDash.valorActualDash += 0.35f;
 
             if (contaminacion.alphaActual > 0)
             {
@@ -214,7 +214,7 @@ public class MovePlayerMauro : MonoBehaviour
 
             if (contaminacion.alphaActual > 0)
             {
-                contaminacion.alphaActual -= 0.25f;
+                contaminacion.alphaActual -= 0.2f;
             }
 
             barraDash.UsarDash();
