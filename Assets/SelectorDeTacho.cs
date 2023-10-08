@@ -18,8 +18,8 @@ public class SelectorDeTacho : MonoBehaviour
 
         // Actualizar la visualización de los tachos
         TachoVerde.enabled = (tachoSeleccionado == 0);
-        TachoAmarillo.enabled = (tachoSeleccionado == 1);
-        TachoAzul.enabled = (tachoSeleccionado == 2);
+        TachoAzul.enabled = (tachoSeleccionado == 1);
+        TachoAmarillo.enabled = (tachoSeleccionado == 2);
         TachoRojo.enabled = (tachoSeleccionado == 3);
     }
 
