@@ -11,10 +11,12 @@ public class Basura : MonoBehaviour
     public float anchoMaximoSpawn;
     public float anchoMinimoSpawn;
 
+
     // Lista que almacena las basuras generadas
     private List<GameObject> basurasGeneradas = new List<GameObject>();
 
     private float proximoTiempoSpawn;
+
 
     private void Start()
     {

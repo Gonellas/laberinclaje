@@ -8,6 +8,7 @@ TagManager:
   - BasuraTipoBotella
   - BasuraTipoPapel
   - BasuraTipoPila
+  - Suelo
   layers:
   - Default
   - TransparentFX

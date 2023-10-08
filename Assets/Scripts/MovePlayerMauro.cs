@@ -11,6 +11,8 @@ public class MovePlayerMauro : MonoBehaviour
     private float horizontal;
     private float velocidad = 8f;
     private bool mirandoDerecha = true;
+    private float limiteIzquierdo = -6.25f;
+    private float limiteDerecho = 6.25f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
@@ -93,6 +95,14 @@ public class MovePlayerMauro : MonoBehaviour
 
         horizontal = Input.GetAxisRaw("Horizontal");
 
+        //Calculamos la nueva posicion del jugador
+        Vector3 nuevaPosicion = transform.position + new Vector3(horizontal * velocidad * Time.deltaTime, 0, 0);
+
+        //aplicamos restricciones en el eje X
+        nuevaPosicion.x = Mathf.Clamp(nuevaPosicion.x, limiteIzquierdo, limiteDerecho);
+
+        //asignar la nueva posicion del pj
+        transform.position = nuevaPosicion;
 
         if (horizontal != 0f)
         {
