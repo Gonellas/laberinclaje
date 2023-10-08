@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Contaminacion : MonoBehaviour
 {
@@ -36,6 +37,6 @@ public class Contaminacion : MonoBehaviour
     private void PerderJuego()
     {
         //Cambiamos a la escena de Scores
-        Debug.Log("Perdimos");
+        SceneManager.LoadScene("SaveScore");
     }
 }

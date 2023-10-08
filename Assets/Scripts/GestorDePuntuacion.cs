@@ -12,5 +12,8 @@ public class GestorDePuntuacion : MonoBehaviour
     {
         puntuacion += valor;
         puntuacionTexto.text = "Puntuación: " + puntuacion;
+        // Guardar el valor del puntaje
+        PlayerPrefs.SetInt("Puntaje", puntuacion); //Almacena
+        PlayerPrefs.Save(); // Asegura que se guarde
     }
 }

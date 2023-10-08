@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class SceneManagerController : MonoBehaviour
 {
     public GameObject[] allMenues;
     public GameObject wantedActiveMenu;
+
+
 
     private void Start()
     {
@@ -20,6 +23,8 @@ public class SceneManagerController : MonoBehaviour
 
         if (wantedActiveMenu != null) wantedActiveMenu.SetActive(true);
     }
+
+  
 
     public void ChangeScene(Object scene)
     {

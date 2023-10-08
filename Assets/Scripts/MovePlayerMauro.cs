@@ -33,10 +33,14 @@ public class MovePlayerMauro : MonoBehaviour
 
     public Contaminacion contaminacion;
 
+    public BarraDash barraDash;
+
 
     private void Start()
     {
         contaminacion = GameObject.FindObjectOfType<Contaminacion>();
+
+        barraDash = GameObject.FindObjectOfType<BarraDash>();
     }
     void Update()
     {
@@ -75,26 +79,41 @@ public class MovePlayerMauro : MonoBehaviour
         if (collision.gameObject.CompareTag("BasuraTipoBanana") && animator.GetInteger("AnimacionActual") == 0)
         {
             gestorPuntuacion.ActualizarPuntuacion(10);
-            contaminacion.alphaActual -= 0.1f;
+            if (contaminacion.alphaActual > 0)
+            {
+                contaminacion.alphaActual -= 0.1f;
+            }
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoPapel") && animator.GetInteger("AnimacionActual") == 1)
         {
             gestorPuntuacion.ActualizarPuntuacion(25);
-             contaminacion.alphaActual -= 0.1f;
+            if (contaminacion.alphaActual > 0)
+            {
+                contaminacion.alphaActual -= 0.1f;
+            }
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoBotella") && animator.GetInteger("AnimacionActual") == 2)
         {
             gestorPuntuacion.ActualizarPuntuacion(50);
-            contaminacion.alphaActual -= 0.1f;
+            if (contaminacion.alphaActual > 0)
+            {
+                contaminacion.alphaActual -= 0.1f;
+            }
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoPila") && animator.GetInteger("AnimacionActual") == 3)
         {
             gestorPuntuacion.ActualizarPuntuacion(100);
-            contaminacion.alphaActual -= 0.1f;
+            if(contaminacion.alphaActual > 0)
+            {
+                contaminacion.alphaActual -= 0.1f;
+            }
+            
         }
+     
+        barraDash.valorActualDash += 0.1f;
 
         Destroy(collision.gameObject);
     }
@@ -163,20 +182,33 @@ public class MovePlayerMauro : MonoBehaviour
 
     private IEnumerator Dash()
     {
-        sePuedeMover = false;
-        puedeDashear = false;
-        estaDasheando = true;
-        animator.SetBool("move", false);
-        animator.SetTrigger("Dash");
-        rb.velocity = new Vector2(transform.localScale.x * velocidadDash, 0f);
+      
+        if (barraDash.EstaCasiLLena())
+        {
+            
+            sePuedeMover = false;
+            puedeDashear = false;
+            estaDasheando = true;
+            animator.SetBool("move", false);
+            animator.SetTrigger("Dash");
+            rb.velocity = new Vector2(transform.localScale.x * velocidadDash, 0f);
+
+            if (contaminacion.alphaActual > 0)
+            {
+                contaminacion.alphaActual -= 0.2f;
+            }
+
+            barraDash.UsarDash();
+            gestorPuntuacion.ActualizarPuntuacion(150);
+        }
+
         yield return new WaitForSeconds(tiempoDash);
         sePuedeMover = true;
         estaDasheando = false;
         yield return new WaitForSeconds(dashCooldown);
-        puedeDashear = true;
+
+            puedeDashear = true;
         
-
     }
-
-  
+    
 }

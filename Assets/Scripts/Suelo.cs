@@ -17,19 +17,19 @@ public class Suelo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("BasuraTipoPila"))
         {
-            contaminacion.alphaActual += 0.1f;
+            contaminacion.alphaActual += 0.2f;
         }
         if (collision.gameObject.CompareTag("BasuraTipoBanana"))
         {
-            contaminacion.alphaActual += 0.1f;
+            contaminacion.alphaActual += 0.2f;
         }
         if (collision.gameObject.CompareTag("BasuraTipoPapel"))
         {
-            contaminacion.alphaActual += 0.1f;
+            contaminacion.alphaActual += 0.2f;
         }
         if (collision.gameObject.CompareTag("BasuraTipoBotella"))
         {
-            contaminacion.alphaActual += 0.1f;
+            contaminacion.alphaActual += 0.2f;
         }
     }
 }
