@@ -3211,6 +3211,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 146600153}
     m_Modifications:
+    - target: {fileID: 2674572751930000881, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.9
+      objectReference: {fileID: 0}
     - target: {fileID: 2969834499008284640, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 4
@@ -3274,6 +3278,26 @@ PrefabInstance:
     - target: {fileID: 2969834499008284640, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3165775559249424800, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 3.6999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4338804581350417447, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -38.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6296830664884559005, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_text
+      value: Collect correct type of trash to unleash a powerful Dash
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339766268561265146, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7982966840863998497, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8252365631334527215, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -3378,6 +3402,14 @@ PrefabInstance:
     - target: {fileID: 8252365632735717451, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165822279561511569, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_text
+      value: Watch out for the contamination turning your screen green - you'll lose!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9165822279561511569, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
+      propertyPath: m_lineSpacing
+      value: -18
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81cc75318a16c6b47a14e4e5daf5cc88, type: 3}
