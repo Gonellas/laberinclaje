@@ -21,6 +21,10 @@ public class Basura : MonoBehaviour
     private float proximoTiempoSpawn;
     private float tiempoTotalMaximo = 150.0f;
 
+    private float delayInicial = 4.0f;
+
+    private bool juegoComenzando = false;
+
 
     private void Start()
     {
@@ -30,21 +34,31 @@ public class Basura : MonoBehaviour
 
     private void Update()
     {
-        float tiempoActual = Time.time;
-
-        float porcentajeTiempoTranscurrido = Mathf.Clamp01(tiempoActual / tiempoTotalMaximo);
-        maxSpawnIntervalo = Mathf.Lerp(maxSpawnIntervaloInicial, 1.25f, porcentajeTiempoTranscurrido);
-
-        if (tiempoActual >= proximoTiempoSpawn)
+        if (!juegoComenzando)
         {
-            
-            SpawnBasura();
-            proximoTiempoSpawn = tiempoActual + Random.Range(minSpawnIntervalo, maxSpawnIntervaloInicial);
-        }
-        
+            if(Time.time >= delayInicial)
+            {
+                juegoComenzando = true;
+            }
 
-        DestruirBasuraFueraDeCamara();
-        
+        }
+        else
+        {
+            float tiempoActual = Time.time;
+
+            float porcentajeTiempoTranscurrido = Mathf.Clamp01(tiempoActual / tiempoTotalMaximo);
+            maxSpawnIntervalo = Mathf.Lerp(maxSpawnIntervaloInicial, 1.25f, porcentajeTiempoTranscurrido);
+
+            if (tiempoActual >= proximoTiempoSpawn)
+            {
+
+                SpawnBasura();
+                proximoTiempoSpawn = tiempoActual + Random.Range(minSpawnIntervalo, maxSpawnIntervaloInicial);
+            }
+
+
+            DestruirBasuraFueraDeCamara();
+        }        
     }
 
 
