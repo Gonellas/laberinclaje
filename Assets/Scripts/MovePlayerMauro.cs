@@ -39,6 +39,7 @@ public class MovePlayerMauro : MonoBehaviour
     [SerializeField] private AudioClip pasoUno;
     [SerializeField] private AudioClip pasoDos;
     [SerializeField] private AudioClip feedbackBasura;
+    [SerializeField] private AudioClip basuraMala;
 
 
     private void Start()
@@ -87,6 +88,7 @@ public class MovePlayerMauro : MonoBehaviour
         {
             gestorPuntuacion.ActualizarPuntuacion(10);
             barraDash.valorActualDash += 0.35f;
+            audioMove.PlayOneShot(feedbackBasura);
 
             if (contaminacion.alphaActual > 0)
             {
@@ -98,6 +100,7 @@ public class MovePlayerMauro : MonoBehaviour
         {
             gestorPuntuacion.ActualizarPuntuacion(25);
             barraDash.valorActualDash += 0.35f;
+            audioMove.PlayOneShot(feedbackBasura);
 
             if (contaminacion.alphaActual > 0)
             {
@@ -108,6 +111,7 @@ public class MovePlayerMauro : MonoBehaviour
         else if (collision.gameObject.CompareTag("BasuraTipoBotella") && animacionActual == 2)
         {
             gestorPuntuacion.ActualizarPuntuacion(50);
+            audioMove.PlayOneShot(feedbackBasura);
             barraDash.valorActualDash += 0.35f;
 
             if (contaminacion.alphaActual > 0)
@@ -119,6 +123,7 @@ public class MovePlayerMauro : MonoBehaviour
         else if (collision.gameObject.CompareTag("BasuraTipoPila") && animacionActual == 3)
         {
             gestorPuntuacion.ActualizarPuntuacion(100);
+            audioMove.PlayOneShot(feedbackBasura);
             barraDash.valorActualDash += 0.35f;
 
             if (contaminacion.alphaActual > 0)
@@ -130,10 +135,11 @@ public class MovePlayerMauro : MonoBehaviour
         {
             // si el jugador colisiona con otra basura mientras esta en una animacion (sosteniendo el tacho) erroneo aumenta la contaminacion
             contaminacion.alphaActual += 0.1f;
+            audioMove.PlayOneShot(basuraMala);
+
         }
   
         // barraDash.valorActualDash += 0.1f; //Para que cualquier basura sume para el dash
-        audioMove.PlayOneShot(feedbackBasura);
         Destroy(collision.gameObject);
     }
 
