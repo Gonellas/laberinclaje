@@ -5070,7 +5070,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1920648476}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5211,7 +5211,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1920648476}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -5232,7 +5232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alphaActual: 0
   alphaMaximo: 1
-  velocidadAumentoAlpha: 0.001
+  velocidadAumentoAlpha: 0.05
 --- !u!114 &476758405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6459,6 +6459,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 348450563}
     - target: {fileID: 3790089931449256567, guid: 8297633c86bdd0144a67b554203fd409, type: 3}
+      propertyPath: barraDash
+      value: 
+      objectReference: {fileID: 1657845205}
+    - target: {fileID: 3790089931449256567, guid: 8297633c86bdd0144a67b554203fd409, type: 3}
       propertyPath: contaminacion
       value: 
       objectReference: {fileID: 476758404}
@@ -7278,8 +7282,8 @@ RectTransform:
   - {fileID: 1984491693}
   - {fileID: 1160671386}
   - {fileID: 1657845204}
-  - {fileID: 476758403}
   - {fileID: 438850963}
+  - {fileID: 476758403}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
