@@ -8,6 +8,7 @@ public class Contaminacion : MonoBehaviour
 {
     public float alphaActual = 0.0f;
     public float alphaMaximo = 1.0f;
+    public float velocidadAumentoAlpha = 0.05f;
 
     private Image imageContaminacion;
 
@@ -18,6 +19,8 @@ public class Contaminacion : MonoBehaviour
 
     private void Update()
     {
+        //Aumentamos el alpha gradualmente
+        alphaActual += velocidadAumentoAlpha * Time.deltaTime;
 
         //Limitamos el alpha al valor maximo
         alphaActual = Mathf.Min(alphaActual, alphaMaximo);

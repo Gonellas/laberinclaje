@@ -6,32 +6,47 @@ public class Basura : MonoBehaviour
 {
     public BasuraFactoryMethod[] factoryMethods; // Referencia a la clase Factory
     public Transform puntoSpawn; // Punto de inicio en la parte superior de la pantalla
-    public float minSpawnIntervalo = 1.0f; // Intervalo mínimo entre la generación de basura
-    public float maxSpawnIntervalo = 5.0f; // Intervalo máximo entre la generación de basura
+    public float minSpawnIntervalo = 0.5f; // Intervalo mínimo entre la generación de basura
+    public float maxSpawnIntervaloInicial = 4.0f; // Intervalo máximo entre la generación de basura
     public float anchoMaximoSpawn;
     public float anchoMinimoSpawn;
+
+    public float maxSpawnIntervalo;
+    public PauseMenu pauseMenu;
 
 
     // Lista que almacena las basuras generadas
     private List<GameObject> basurasGeneradas = new List<GameObject>();
 
     private float proximoTiempoSpawn;
+    private float tiempoTotalMaximo = 150.0f;
 
 
     private void Start()
     {
-        proximoTiempoSpawn = Random.Range(minSpawnIntervalo, maxSpawnIntervalo);
+        maxSpawnIntervalo = maxSpawnIntervaloInicial;
+        proximoTiempoSpawn = Random.Range(minSpawnIntervalo, maxSpawnIntervaloInicial);
     }
 
     private void Update()
     {
-        if (Time.time >= proximoTiempoSpawn)
+        float tiempoActual = Time.time;
+
+        float porcentajeTiempoTranscurrido = Mathf.Clamp01(tiempoActual / tiempoTotalMaximo);
+        maxSpawnIntervalo = Mathf.Lerp(maxSpawnIntervaloInicial, 1.25f, porcentajeTiempoTranscurrido);
+
+        if (tiempoActual >= proximoTiempoSpawn)
         {
+            
             SpawnBasura();
-            proximoTiempoSpawn = Time.time + Random.Range(minSpawnIntervalo, maxSpawnIntervalo);
+            proximoTiempoSpawn = tiempoActual + Random.Range(minSpawnIntervalo, maxSpawnIntervaloInicial);
         }
+        
+
         DestruirBasuraFueraDeCamara();
+        
     }
+
 
     private void SpawnBasura()
     {
