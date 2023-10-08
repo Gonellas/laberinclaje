@@ -11,8 +11,8 @@ public class MovePlayerMauro : MonoBehaviour
     private float horizontal;
     private float velocidad = 8f;
     private bool mirandoDerecha = true;
-    private float limiteIzquierdo = -6.25f;
-    private float limiteDerecho = 6.25f;
+    private float limiteIzquierdo = -8.5f;
+    private float limiteDerecho = 8.5f;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
@@ -76,44 +76,58 @@ public class MovePlayerMauro : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("BasuraTipoBanana") && animator.GetInteger("AnimacionActual") == 0)
+        int animacionActual = animator.GetInteger("AnimacionActual");
+
+        if (collision.gameObject.CompareTag("BasuraTipoBanana") && animacionActual == 0)
         {
             gestorPuntuacion.ActualizarPuntuacion(10);
+            barraDash.valorActualDash += 0.1f;
+
             if (contaminacion.alphaActual > 0)
             {
                 contaminacion.alphaActual -= 0.1f;
             }
         }
 
-        if (collision.gameObject.CompareTag("BasuraTipoPapel") && animator.GetInteger("AnimacionActual") == 1)
+        else if (collision.gameObject.CompareTag("BasuraTipoPapel") && animacionActual == 1)
         {
             gestorPuntuacion.ActualizarPuntuacion(25);
+            barraDash.valorActualDash += 0.1f;
+
             if (contaminacion.alphaActual > 0)
             {
                 contaminacion.alphaActual -= 0.1f;
             }
         }
 
-        if (collision.gameObject.CompareTag("BasuraTipoBotella") && animator.GetInteger("AnimacionActual") == 2)
+        else if (collision.gameObject.CompareTag("BasuraTipoBotella") && animacionActual == 2)
         {
             gestorPuntuacion.ActualizarPuntuacion(50);
+            barraDash.valorActualDash += 0.1f;
+
             if (contaminacion.alphaActual > 0)
             {
                 contaminacion.alphaActual -= 0.1f;
             }
         }
 
-        if (collision.gameObject.CompareTag("BasuraTipoPila") && animator.GetInteger("AnimacionActual") == 3)
+        else if (collision.gameObject.CompareTag("BasuraTipoPila") && animacionActual == 3)
         {
             gestorPuntuacion.ActualizarPuntuacion(100);
-            if(contaminacion.alphaActual > 0)
+            barraDash.valorActualDash += 0.1f;
+
+            if (contaminacion.alphaActual > 0)
             {
                 contaminacion.alphaActual -= 0.1f;
-            }
-            
+            }    
         }
-     
-        barraDash.valorActualDash += 0.1f;
+        else
+        {
+            // si el jugador colisiona con otra basura mientras esta en una animacion (sosteniendo el tacho) erroneo aumenta la contaminacion
+            contaminacion.alphaActual += 0.1f;
+        }
+  
+        // barraDash.valorActualDash += 0.1f; //Para que cualquier basura sume para el dash
 
         Destroy(collision.gameObject);
     }
@@ -195,7 +209,7 @@ public class MovePlayerMauro : MonoBehaviour
 
             if (contaminacion.alphaActual > 0)
             {
-                contaminacion.alphaActual -= 0.2f;
+                contaminacion.alphaActual -= 0.25f;
             }
 
             barraDash.UsarDash();

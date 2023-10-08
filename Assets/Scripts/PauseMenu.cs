@@ -17,6 +17,10 @@ public class PauseMenu : MonoBehaviour
     public TextMeshProUGUI textoTiempo;
     public float duracionMaxima = 180f;
 
+    private void Start()
+    {
+
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -25,6 +29,7 @@ public class PauseMenu : MonoBehaviour
         }
   
         tiempoTranscurrido += Time.deltaTime;
+
 
         if (tiempoTranscurrido >= duracionMaxima)
         {
