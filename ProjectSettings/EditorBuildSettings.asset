@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Shimmy.unity
+    guid: 8453ab4666d016344ac469ff01672085
+  - enabled: 1
+    path: Assets/Scenes/SaveScore.unity
+    guid: 8b69e76361fafad4091f8fcd3099d711
+  - enabled: 1
+    path: Assets/Scenes/Highscores.unity
+    guid: f933610db99789f458e1c321a4095016
   m_configObjects: {}
