@@ -5232,7 +5232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   alphaActual: 0
   alphaMaximo: 1
-  velocidadAumentoAlpha: 0.05
+  velocidadAumentoAlpha: 0.005
 --- !u!114 &476758405
 MonoBehaviour:
   m_ObjectHideFlags: 0
