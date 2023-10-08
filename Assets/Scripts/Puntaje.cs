@@ -23,7 +23,7 @@ public class Puntaje : MonoBehaviour
         puntos += puntosEntrada;
 
         // Guardar el valor del puntaje
-        PlayerPrefs.SetInt("Puntaje", puntos); //Almacena
-        PlayerPrefs.Save(); // Asegura que se guarde
+        // PlayerPrefs.SetInt("Puntaje", puntos); //Almacena
+        // PlayerPrefs.Save(); // Asegura que se guarde
     }
 }
