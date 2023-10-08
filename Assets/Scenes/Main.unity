@@ -5852,7 +5852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606976831033894905, guid: a40652cb994384c499c7df8423712665, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6606976831033894905, guid: a40652cb994384c499c7df8423712665, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
@@ -5893,7 +5893,11 @@ PrefabInstance:
     - target: {fileID: 6606976831033894905, guid: a40652cb994384c499c7df8423712665, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 102900000, guid: 870c28d5b5cec7248a93931f694ac1b2, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606976831033894905, guid: a40652cb994384c499c7df8423712665, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Menu
+      objectReference: {fileID: 0}
     - target: {fileID: 6606976831033894905, guid: a40652cb994384c499c7df8423712665, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine

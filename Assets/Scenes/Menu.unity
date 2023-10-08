@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allMenues: []
-  wantedActiveMenu: {fileID: 0}
+  wantedActiveMenu: {fileID: 424416755}
 --- !u!1 &209590238
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,13 +674,13 @@ MonoBehaviour:
       - m_Target: {fileID: 146600154}
         m_TargetAssemblyTypeName: SceneManagerController, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 2
+        m_Mode: 5
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: f933610db99789f458e1c321a4095016, type: 3}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Highscores
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &430281750
@@ -3092,7 +3092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2541010422392514977, guid: 5b082a48cb81d454eabe8477e23250ad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2541010422392514977, guid: 5b082a48cb81d454eabe8477e23250ad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3113,7 +3113,11 @@ PrefabInstance:
     - target: {fileID: 2541010422392514977, guid: 5b082a48cb81d454eabe8477e23250ad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 102900000, guid: 2cda990e2423bbf4892e6590ba056729, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 2541010422392514977, guid: 5b082a48cb81d454eabe8477e23250ad, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: Main
+      objectReference: {fileID: 0}
     - target: {fileID: 2541010422392514977, guid: 5b082a48cb81d454eabe8477e23250ad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine

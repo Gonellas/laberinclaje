@@ -1132,7 +1132,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6606976831033894905, guid: 38c05d97d99b86042bd54a2b4f4e0e55, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6606976831033894905, guid: 38c05d97d99b86042bd54a2b4f4e0e55, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
@@ -1193,7 +1193,11 @@ PrefabInstance:
     - target: {fileID: 6606976831033894905, guid: 38c05d97d99b86042bd54a2b4f4e0e55, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 102900000, guid: f933610db99789f458e1c321a4095016, type: 3}
+      objectReference: {fileID: 0}
+    - target: {fileID: 6606976831033894905, guid: 38c05d97d99b86042bd54a2b4f4e0e55, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: Highscores
+      objectReference: {fileID: 0}
     - target: {fileID: 6606976831033894905, guid: 38c05d97d99b86042bd54a2b4f4e0e55, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
       value: 
