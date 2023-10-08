@@ -6,6 +6,8 @@ public class Suelo : MonoBehaviour
 {
 
     public Contaminacion contaminacion;
+    public AudioSource audioSuelo;
+    [SerializeField] private AudioClip audioClipSuelo;
 
     private void Start()
     {
@@ -31,5 +33,8 @@ public class Suelo : MonoBehaviour
         {
             contaminacion.alphaActual += 0.2f;
         }
+
+        audioSuelo.PlayOneShot(audioClipSuelo);
     }
+
 }

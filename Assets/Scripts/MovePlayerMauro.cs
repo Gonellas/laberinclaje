@@ -35,6 +35,11 @@ public class MovePlayerMauro : MonoBehaviour
 
     public BarraDash barraDash;
 
+    public AudioSource audioMove;
+    [SerializeField] private AudioClip pasoUno;
+    [SerializeField] private AudioClip pasoDos;
+    [SerializeField] private AudioClip feedbackBasura;
+
 
     private void Start()
     {
@@ -128,7 +133,7 @@ public class MovePlayerMauro : MonoBehaviour
         }
   
         // barraDash.valorActualDash += 0.1f; //Para que cualquier basura sume para el dash
-
+        audioMove.PlayOneShot(feedbackBasura);
         Destroy(collision.gameObject);
     }
 
@@ -178,7 +183,7 @@ public class MovePlayerMauro : MonoBehaviour
             }
             animator.SetInteger("AnimacionActual", contadorDeClick);
         }
-        // Llamar a la función en el TachoSelector para seleccionar el tacho
+        // Llamar a la funciï¿½n en el TachoSelector para seleccionar el tacho
         tachoSelector.SeleccionarTacho(contadorDeClick);
 
     }
@@ -223,6 +228,16 @@ public class MovePlayerMauro : MonoBehaviour
 
             puedeDashear = true;
         
+    }
+
+    public void FootstepsOne()
+    {
+        audioMove.PlayOneShot(pasoUno);
+    }
+
+    public void FootstepsTwo()
+    {
+        audioMove.PlayOneShot(pasoDos);
     }
     
 }
