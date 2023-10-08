@@ -31,8 +31,13 @@ public class MovePlayerMauro : MonoBehaviour
     //Variable para acceder al selector de Tachos UI
     public SelectorDeTacho tachoSelector;
 
+    public Contaminacion contaminacion;
 
 
+    private void Start()
+    {
+        contaminacion = GameObject.FindObjectOfType<Contaminacion>();
+    }
     void Update()
     {
         if (estaDasheando)
@@ -70,21 +75,25 @@ public class MovePlayerMauro : MonoBehaviour
         if (collision.gameObject.CompareTag("BasuraTipoBanana") && animator.GetInteger("AnimacionActual") == 0)
         {
             gestorPuntuacion.ActualizarPuntuacion(10);
+            contaminacion.alphaActual -= 0.1f;
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoPapel") && animator.GetInteger("AnimacionActual") == 1)
         {
             gestorPuntuacion.ActualizarPuntuacion(25);
+             contaminacion.alphaActual -= 0.1f;
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoBotella") && animator.GetInteger("AnimacionActual") == 2)
         {
             gestorPuntuacion.ActualizarPuntuacion(50);
+            contaminacion.alphaActual -= 0.1f;
         }
 
         if (collision.gameObject.CompareTag("BasuraTipoPila") && animator.GetInteger("AnimacionActual") == 3)
         {
             gestorPuntuacion.ActualizarPuntuacion(100);
+            contaminacion.alphaActual -= 0.1f;
         }
 
         Destroy(collision.gameObject);

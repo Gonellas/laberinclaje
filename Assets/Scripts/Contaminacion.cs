@@ -7,7 +7,6 @@ public class Contaminacion : MonoBehaviour
 {
     public float alphaActual = 0.0f;
     public float alphaMaximo = 1.0f;
-    public float velocidadAumentoAlpha = 0.1f;
 
     private Image imageContaminacion;
 
