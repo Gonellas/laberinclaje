@@ -12,6 +12,9 @@ public class MovePlayerMauro : MonoBehaviour
     private float velocidad = 8f;
     private bool mirandoDerecha = true;
 
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Animator animator;
+
     //Variables para el Dash
     private bool puedeDashear = true;
     [SerializeField] public bool sePuedeMover = true;
@@ -22,10 +25,11 @@ public class MovePlayerMauro : MonoBehaviour
 
     //Variable para la puntiacion
     public GestorDePuntuacion gestorPuntuacion;
-   
 
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private Animator animator;
+    //Variable para acceder al selector de Tachos UI
+    public SelectorDeTacho tachoSelector;
+
+
 
     void Update()
     {
@@ -122,6 +126,9 @@ public class MovePlayerMauro : MonoBehaviour
             }
             animator.SetInteger("AnimacionActual", contadorDeClick);
         }
+        // Llamar a la función en el TachoSelector para seleccionar el tacho
+        tachoSelector.SeleccionarTacho(contadorDeClick);
+
     }
 
     private void Flip()
